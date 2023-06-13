@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/mxz6iqv.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="typography.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+    <link href="loader.css" rel="stylesheet">
+    <title>Ivan Cheremisin | CityMobil</title>
+    <link rel="icon" type="image" href="img/ivan.ico">
+</head>
+
+<body>
+    <div class="structure">
+
+        <div id="header">
+            <ul class="menu">
+                <li class="menu_item"><a href="index.html">home</a></li>
+                <li class="menu_item"><a href="https://www.linkedin.com/in/icheremisin/">linkedin</a></li>
+                <li class="menu_item"><a href="https://t.me/cheremisincouk">telegram</a></li>
+                <li class="menu_item"><a href="mailto:ivan@cheremisin.co.uk">mail</a></li>
+            </ul>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div>
+                    <p class="gap_1">CityMobil</p>
+                    <p class="description gap_1">The company is an aggregator with two main types of clients: passengers
+                        and drivers. Both have questions about the service. The work of a customer service operator is
+                        similar to a
+                        detective's and a psychologist's work. We may not always be able to solve problems faster
+                        through graphic interface, but we can collect and provide the necessary information to reduce
+                        search time.
+                    </p>
+                    <p class="gap_1">Tasks</p>
+                    <p class="description gap_1">To develop an operator interface for the support service and
+                        Provide it for scaling the service to other projects
+                    </p>
+                    <p>Evaluating the interface</p>
+                    <ul class="s gap_2">
+                        <li class="description">Percentage of successfully completed tickets
+                        </li>
+                        <li class="description">Percentage of operators who adapted
+                        </li>
+                        <li class="description">Interaction rate
+                        </li>
+                        <li class="description">Interface clarity and predictability
+                        </li>
+                        <li class="description">Versatility of components
+                        </li>
+                    </ul>
+
+                    <div class="buttn_block">
+                        <button class="buttn" onclick="location.href='https://city-mobil.ru/'"
+                            type="button">VISIT</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <img class="portrait sticky" src="img/city/cover.png" alt="citymobil">
+
+            </div>
+
+        </div>
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="gap_1">Problem</p>
+                    <p class="description gap_2">Drivers and passengers leave and do not return. Customer service is
+                        slow and inaccurate. The existing system is not scalable and cannot be reused in other projects.
+                    </p>
+                    <p class="gap_1">Plan</p>
+                    <p class="description gap_1">I worked as a support operator myself in order to study all the cases
+                        and collect the obvious problems, interviewed a group of operators and collected their pains
+                        and wishes. It just so happens that there are very different people working as support
+                        operators, many of them elderly and everything new is perceived negatively by them. They are
+                        ready to fight for the bad, but familiar, there are a lot of such employees, but we also need
+                        to work with them. So about 70% of the information from the operators in the initial stages
+                        was useless.
+
+                    </p>
+                    <p class="gap_1">Hypothesis</p>
+                    <p class="description gap_1">My analysis has shown that the work of the operator is physically in
+                        three entities: communication with the client, information retrieval or entering information
+                        into the database (for us it's the same, we collect all the information) and the process of
+                        problem solving or exeution.
+                    </p>
+
+                    </p>
+                    <p class="gap_1">Solution</p>
+                    <p class="description gap_1">I built a workspace with three contextual components, as shown in the
+                        picture. They are assembled depending on what question the person asked
+                    </p>
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/city/overall-1.png" alt="citymobil">
+                    <img class="portrait" src="img/city/overall-2.png" alt="citymobil">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="gap_1">Before</p>
+                    <p class="description gap_1">Operators had to use a kon product for support. It was written by
+                        programmers for programmers to simply output data from the API. Operators don't need 90% of that
+                        information
+                    </p>
+                    <p class="description gap_1">But the background information, the answer templates for chats and for
+                        calls were collected in scattered files physically on the supervisors' and operators' computers
+                        and in Jira's massive documents. There was no single source of truth.
+                    </p>
+                    <p class="description gap_1">To solve the most common request "payment problem", the operator had to
+                        open 13 tabs and spend from 320 seconds.
+                    </p>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/city/before-1.png" alt="citymobil">
+                    <img class="portrait" src="img/city/before-2.png" alt="citymobil">
+                    <img class="portrait" src="img/city/before-3.png" alt="citymobil">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="gap_2">After</p>
+                    <p class="description">Main components</p>
+                    <p class="gap_1">Execution
+                    </p>
+                    <p class="description gap_1">As soon as a customer contacts support, we create a ticket, with the
+                        help of the "execute component" the operator adds attributes to the ticket so that we know what
+                        information to show in the "widget component".
+                    </p>
+                    <p class="description gap_1">When the operator has made a decision, he uses this
+                        component to change the status of the ticket.
+                    </p>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/city/execution-1.png" alt="citymobil">
+                    <img class="portrait" src="img/city/execution-2.png" alt="citymobil">
+                    <img class="portrait" src="img/city/execution-3.png" alt="citymobil">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="description">Main components</p>
+                    <p class="gap_1">Overall Information
+                    </p>
+                    <p class="description gap_1">In this component, we show general information about the trip, the
+                        driver, or the passenger. This component is also collected contextually. Depending on what
+                        incoming data we have or what data the operator has chosen.
+                    </p>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/city/info-1.png" alt="citymobil">
+                    <img class="portrait" src="img/city/info-2.png" alt="citymobil">
+                    <img class="portrait" src="img/city/info-3.png" alt="citymobil">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="description">Main components</p>
+                    <p class="gap_1">Widgets
+                    </p>
+                    <p class="description gap_1">Based on what attributes the operator has chosen in the execution
+                        component, we show him the widgets he needs to solve the problem, there can be several of them.
+                        In some cases, we know in advance what to show.
+                    </p>
+                    <p class="description gap_1">The job of a first-line support operator is very similar to a
+                        detective job. He or she interviews witnesses and suspects, digs through the archives, and then puts the
+                        judgment into action. The widget component is like an elderly lieutenant in the archive
+                        department, quickly finding relevant information and sometimes thinking for the detective to
+                        make his job easier.
+                    </p>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/city/vidgets-1.png" alt="citymobil">
+                    <img class="portrait" src="img/city/vidgets-2.png" alt="citymobil">
+                    <img class="portrait" src="img/city/vidgets-4.png" alt="citymobil">
+                    <img class="portrait" src="img/city/vidgets-3.png" alt="citymobil">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="description">Main components</p>
+                    <p class="gap_1">Chats & calls
+                    </p>
+                    <p class="description gap_1">The service is omnichannel, the operator can receive calls and chats. It
+                        is possible to switch to another line and merge calls.
+                    </p>
+                    <p class="description gap_1">Chats have the ability to send promo codes, media files and show answer
+                        templates.
+                    </p>
+                    <p class="description gap_1">Gradually we began a transition to a customizable workplace. We started
+                        with chats. Because of the specifics of the people we were working with, we couldn't give them
+                        complete freedom. So we introduced an invisible grid in which everything lives. Move and change
+                        the size of the chat only within this grid. We did not have time to test how customizable widgets
+                        work.
+                    </p>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/city/chats-1.png" alt="citymobil">
+                    <img class="portrait" src="img/city/chats-2.png" alt="citymobil">
+                    <img class="portrait" src="img/city/chat-3.png" alt="citymobil">
+                    <img class="portrait" src="img/city/layout-1.gif" alt="citymobil">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="gap_1">Afterwords
+                    </p>
+                    <p class="description gap_1">In the end, our work space was used by about 600 people across the
+                        country and 80 partner companies. The service was sent to many ecosystem companies for
+                        development and we saved a lot of money.
+                    </p>
+                    <p class="description gap_1">I will gladly tell you more in person.
+                    </p>
+                    <p>Some statistics</p>
+                    <ul class="s gap_2">
+                        <li class="description">A team of 26 operators sent us 1800 hours of working procces
+                        </li>
+                        <li class="description">Near 170 interviews
+                        </li>
+                        <li class="description">More than 20 failured hypothesis
+                        </li>
+                        <li class="description">The average time to process an order was reduced from 360 seconds to 76
+                        </li>
+                        <li class="description">2.949.120.458 pixels
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <ul class="menu">
+                <li class="menu_item"><a href="https://www.instagram.com/cheremisin.co.uk/">instagram</a></li>
+                <li class="menu_item"><a href="https://www.facebook.com/ivan.cheremisin.1/">facebook</a></li>
+                <li class="menu_item"><a href="gallery.html">photo</a></li>
+            </ul>
+        </div>
+</body>
+
+</html>
