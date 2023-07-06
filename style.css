@@ -46,45 +46,8 @@ body {
     margin-bottom: 2vh;
 }
 
-.structure {
 
-    opacity: 1;
-    -webkit-animation-name: fadeInOpacity;
-    animation-name: fadeInOpacity;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-}
 
-.structure-face {
-
-    opacity: 1;
-    -webkit-animation-name: fadeInOpacity;
-    animation-name: fadeInOpacity;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-}
-
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 .buttn_block {
     display: flex;
@@ -137,15 +100,69 @@ body {
     background-color: #0c3245;
 }
 
+.grid {
+    padding-top: 52px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vh;
+
+}
+
+.gridElement {
+    background-color: #fbfbfb;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 320px ;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 8px;
+
+}
+
+.difference {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+@media screen and (max-width:1252px) {
+
+.grid {
+    padding-top: 52px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2vh;
+
+}
+
+.gridElement {
+    background-color: #fbfbfb;
+    padding: 16px 20px;
+    gap: 8px;
+}
 
 
-
+}
 
 
 
 /* Mobile */
 
-@media(max-width:800px) {
+@media screen and (max-width:800px) {
+
+   
+
+    .float {
+        display: none;
+    }
+
     .graphics {
         display: none;
     }
@@ -225,8 +242,8 @@ body {
         margin-top: 1vh;
     }
 
-    
-    
+
+
 
     .structure-face {
         width: 100%;
@@ -262,7 +279,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         margin-top: auto;
-        
+
     }
 
     .structure-face .container_face-end {
@@ -275,7 +292,7 @@ body {
     }
 
 
-  
+
 
 }
 
@@ -451,7 +468,7 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items:baseline;
+        align-items: baseline;
         margin-top: 2vh;
     }
 
@@ -576,10 +593,21 @@ a svg {
     border-radius: 2px;
     background-color: #f7f3ff;
     padding: 0.6vh 1.4vh;
-    margin: 4px 4px 0 0 ;
+    margin: 4px 4px 0 0;
     white-space: nowrap;
 }
 
 .skills-invert {
     background-color: #123c50;
 }
+
+.hidden {
+    opacity: 0;
+  
+    transition: all 1s;
+  }
+  
+  .show {
+    opacity: 1;
+  
+  }
