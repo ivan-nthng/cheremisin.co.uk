@@ -32,8 +32,8 @@
             <div class="column">
                 <div>
                     <h2 class="gap_2">Peruse</h2>
-                    <p class="description gap_1">The only AI document automation solution built specifically for the
-                        trucking & freight industry.
+                    <p class="description gap_1">An algorithm that helps analyze large volumes of documents and sort
+                        them by linking them together depending on their relationships.
                     </p>
 
                     <div class="buttn_block">
@@ -42,71 +42,69 @@
                     </div>
 
                     <p class="gap_1">Problem</p>
-                    <p class="description gap_2">The aggregator was the second biggest in the country, but their help
-                        desk software was too complicated. New operators had to complete a two-week training course due
-                        to the high entry-level requirements. The company lost money due to poor customer support
-                        quality, with an average contact time of 360 seconds.
+                    <p class="description gap_1">In a trucking company, most of the paperwork is done manually. Finding
+                        the correct Bill of Lading (BOL) for Rate Confirmation can take a lot of time, and the potential
+                        for human error is also a concern. The efficiency of this process directly affects how quickly
+                        the truck driver receives payment.
                     </p>
-
-                    <p class="gap_1">Research</p>
-                    <p class="description gap_2">To better understand support operators' issues, I worked as one myself.
-                        I collected data on common problems and pain points and interviewed a group of operators for
-                        feedback. However, support operators come from diverse backgrounds, including elderly or
-                        low-skilled individuals who may resist change and prefer the old interfaces. As a result, about
-                        70% of the initial information I gathered was useless and led me to a dead end.
+                    <p class="description gap_1">One significant problem in this business arises from the
+                        characteristics of the people involved. Even if a new software is interesting, there is no time
+                        to understand it. As a result, people postpone the implementation and then forget about it.
                     </p>
-
-                    <p class="gap_1">Hypothesis</p>
-                    <p class="description gap_1">My research has shown that the operator's work consists of three parts:
-                        communicating with the client, searching for or entering information into a database (for us, it
-                        is the same thing, as we collect all the information), and problem-solving or execution. This
-                        process can be compared to the work of a detective. The goal is to examine the provided
-                        information and make decisions based on it.
+                    <p class="description gap_2">The Peruse ML algorithm can perform this task in 20 seconds, regardless
+                        of the amount of data.
                     </p>
 
                     <p class="gap_1">Tasks</p>
-                    <p class="description gap_1">To develop an operator interface for the support service and
-                        Provide it for scaling the service to other projects. Reduce the average contact time to 120
-                        seconds and
-                        eliminate open calls or messages.
+                    <p class="description gap_1">Create a simple demo tool that shows how Peruse can save time for its
+                        customers.
                     </p>
-                    <p>Metrics for Evaluating Work</p>
-                    <ul class="s gap_2">
-                        <li class="description">Time per contact
-                        </li>
-                        <li class="description">Percentage of successfuly solved contacts
-                        </li>
-                        <li class="description">Operator training rate
-                        </li>
-                        <li class="description">Interface clarity and predictability
-                        </li>
-                        <li class="description">Versatility of components
-                        </li>
-                    </ul>
 
-                </div>
-            </div>
-            <div class="column img-row">
-                <img class="portrait sticky" src="img/city/cover.png" alt="citymobil">
-
-            </div>
-
-        </div>
-
-        <div id="container_out">
-            <div class="column">
-                <div class="sticky">
+                    <p class="gap_1">Research</p>
+                    <p class="description gap_2">I interviewed people who do this work, and the main problems were
+                        evident. Many users work with outdated technology. They may not be young and their level of
+                        technology
+                        proficiency may be superficial. Therefore, the entry threshold should be minimal.
+                    </p>
+                    <p class="description gap_2">The workflow consists of two steps: working with an array of documents
+                        and working with data contained within the documents.
+                    </p>
+                    <p class="gap_1">Hypothesis</p>
+                    <p class="description gap_1">The service should work like magic for the user. With just one movement
+                        of the hand, a large amount of data can be transformed into structured information. This solves
+                        the problems of all user groups. However, everything must be done as quickly as possible.
+                    </p>
                     <p class="gap_1">Solution</p>
-                    <p class="description gap_1">I created a workspace with three contextual components, as shown in the
-                        image. These components are assembled depending on the question asked by the person in their
-                        request to the operator.
+                    <p class="description gap_1">I transferred the analog workflow to an electronic medium. The user now
+                        works with the document array and the data in the documents separately.
+                    </p>
+
+
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <img class="portrait sticky" src="img/peruse/peruse-1.png" alt="peruse-open">
+
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <p class="gap_1">Introduction</p>
+                    <p class="description gap_1">A demo is necessary to showcase the strength of the algorithm and to
+                        collect personal data. The process of getting to know each other should be quick and painless.
+                        We only request basic information. Immediately after that, we ask for any type of document, even
+                        a photo of cats or family, as we will find and sort out the necessary pairs.
                     </p>
                 </div>
             </div>
             <div class="column img-row">
                 <div class="sticky">
-                    <img class="portrait" src="img/city/overall-1.png" alt="citymobil">
-                    <img class="portrait" src="img/city/overall-2.png" alt="citymobil">
+                    <img class="portrait" src="img/peruse/layout-1.png" alt="peruse-reg">
+                    <img class="portrait" src="img/peruse/rega-1.png" alt="peruse-upload">
                 </div>
             </div>
 
@@ -115,27 +113,24 @@
         <div id="container_out">
             <div class="column">
                 <div class="sticky">
-                    <p class="gap_1">Before</p>
-                    <p class="description gap_1">There was no convenient tool available to obtain the necessary
-                        information. The interface, which provided access to trip data, was overloaded with unnecessary
-                        information and did not allow even the simplest problems to be solved without additional
-                        training.
+                    <h4 class="gap_2">Working with documents</h4>
+                    <p class="description gap_1">After uploading, we analyze each document and match it to its
+                        corresponding document(s), which can be several. We also specify the probability with which
+                        these documents match each other.
                     </p>
-                    <p class="description gap_1">Additionally, there was no common data source for quick communication
-                        with clients in this service. Each operator had their own table with response templates. This
-                        greatly affected the corporate tone of voice.
-                    </p>
-                    <p class="description gap_1">To resolve the most common problem, "payment problem," an operator had
-                        to open 13 tabs and spend 320 seconds or more.
+                    <p class="description gap_1">After completing the analysis, the user has the option to download and
+                        send all the documents to the accounting department or other relevant parties. Alternatively,
+                        they can work with the data and understand how it all fits together. This leads to the second
+                        user scenario, which involves working with the data in the documents.
                     </p>
 
                 </div>
             </div>
-            <div class="column img-row">
+            <div class="column">
                 <div class="sticky">
-                    <img class="portrait" src="img/city/before-1.png" alt="citymobil">
-                    <img class="portrait" src="img/city/before-2.png" alt="citymobil">
-                    <img class="portrait" src="img/city/before-3.png" alt="citymobil">
+                    <img class="portrait" src="img/peruse/loading-2.png" alt="loading static">
+                    <img class="portrait gap_2" src="img/peruse/pair.png" alt="overal view">
+                    <img class="portrait" src="img/peruse/overall-1.png" alt="overal view">
                 </div>
             </div>
 
@@ -144,228 +139,86 @@
         <div id="container_out">
             <div class="column">
                 <div class="sticky">
-                    <p class="gap_2">After</p>
-                    <p class="description">Main components</p>
-                    <h4 class="gap_1">Execution
+                    <h4 class="gap_2">Working with data</h4>
+                    <p class="description gap_1">Simply finding matching numbers is not sufficient to search for paired
+                        documents; it is also important to understand the context. While a robot couldn't do this
+                        before, Peruse is a useful tool because it understands context. All recognized data can be
+                        viewed, downloaded, or edited if the algorithm did not recognize something or recognized it
+                        incorrectly.
+                    </p>
+
+                </div>
+            </div>
+            <div class="column img-row">
+                <div class="sticky">
+                    <img class="portrait" src="img/peruse/compare-1.png" alt="compare documents">
+                    <img class="portrait" src="img/peruse/connection.png" alt="compare documents">
+                    <img class="portrait" src="img/peruse/extracted-data.png" alt="compare documents">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container_out">
+            <div class="column">
+                <div class="sticky">
+                    <h4 class="gap_2">Edit documents
                     </h4>
-                    <p class="description gap_1">When a customer contacts the help desk, we immediately create a ticket.
-                        Using the "execute" component, the operator adds attributes to the ticket that indicate what
-                        information to display in the "widget" component. When the operator makes a decision, they use
-                        this component to update the ticket's status.
+                    <p class="description gap_1">Drivers often send documents that are photographed in the dark or of
+                        poor quality. In such cases, we edit them on our side. However, if some data is not recognized,
+                        our service provides a simple editor for further editing.
                     </p>
 
                 </div>
             </div>
             <div class="column img-row">
                 <div class="sticky">
-                    <img class="portrait" src="img/city/execution-1.png" alt="citymobil">
-                    <img class="portrait" src="img/city/execution-2.png" alt="citymobil">
-                    <img class="portrait" src="img/city/execution-3.png" alt="citymobil">
+                    <img class="portrait" src="img/peruse/edit.png" alt="edit">
+                    <img class="portrait" src="img/peruse/options.png" alt="options">
+                    <img class="portrait" src="img/peruse/resize.png" alt="resize">
                 </div>
             </div>
 
         </div>
 
+
+
         <div id="container_out">
             <div class="column">
                 <div class="sticky">
-                    <p class="description">Main components</p>
-                    <h4 class="gap_1">Overall Information
+                    <h4 class="gap_2">Identity
                     </h4>
-                    <p class="description gap_1">This component displays general information about the trip, driver, or
-                        passenger. The information shown depends on the incoming data or the data chosen by the
-                        operator.
+                    <p class="description gap_1">I designed the logo and established design standards for interfaces and
+                        other media.
                     </p>
 
                 </div>
             </div>
             <div class="column img-row">
                 <div class="sticky">
-                    <img class="portrait" src="img/city/info-1.png" alt="citymobil">
-                    <img class="portrait" src="img/city/info-2.png" alt="citymobil">
-                    <img class="portrait" src="img/city/info-3.png" alt="citymobil">
+                    <img class="portrait" src="img/peruse/logo-1.png" alt="identity">
+                    <img class="portrait" src="img/peruse/logo-2.png" alt="identity">
+                    <img class="portrait" src="img/peruse/colors-1.png" alt="identity">
+                    <img class="portrait" src="img/peruse/grid-1.png" alt="identity">
+                    <img class="portrait" src="img/peruse/typography-1.png" alt="identity">
+                    <img class="portrait" src="img/peruse/typography-2.png" alt="identity">
                 </div>
             </div>
 
         </div>
 
-        <div id="container_out">
-            <div class="column">
-                <div class="sticky">
-                    <p class="description">Main components</p>
-                    <h4 class="gap_1">Widgets
-                    </h4>
-                    <p class="description gap_1">Once the operator selects the desired attributes in the execution
-                        component, we display the necessary widgets to solve the problem. In some cases, we already know
-                        what widgets need to be shown.
-                    </p>
-                    <p class="description gap_1">The role of a first-line support operator is similar to that of a
-                        detective. They interview witnesses and suspects, sift through archives, and then take action
-                        based on their findings. The widget component serves as an experienced lieutenant in the archive
-                        department, quickly locating relevant information and sometimes even anticipating the
-                        detective's needs to make their job easier.
-                    </p>
-
-                </div>
-            </div>
-            <div class="column img-row">
-                <div class="sticky">
-                    <img class="portrait" src="img/city/vidgets-1.png" alt="citymobil">
-                    <img class="portrait" src="img/city/vidgets-2.png" alt="citymobil">
-                    <img class="portrait" src="img/city/vidgets-4.png" alt="citymobil">
-                    <img class="portrait" src="img/city/vidgets-3.png" alt="citymobil">
-                </div>
-            </div>
-
-        </div>
-
-        <div id="container_out">
-            <div class="column">
-                <div class="sticky">
-                    <p class="description">Main components</p>
-                    <h4 class="gap_1">Chats & calls
-                    </h4>
-                    <p class="description gap_1">Support is offered through multiple channels, allowing operators to
-                        receive calls and chats. Operators can switch between lines and merge calls. Chats also have the
-                        ability to send promo codes, media files, and show response templates.
-                    </p>
-                    <p class="description gap_1">The chat component needs to be both convenient and unobtrusive, so as
-                        not to interfere with the basic work process. To achieve this, we have begun transitioning to a
-                        customizable workspace. However, due to the specifics of the people we were working with, we
-                        could not give them complete freedom. Instead, we introduced an invisible grid in which
-                        everything is located. Chat component can only be moved and resized within that grid to prevent
-                        accidental movements from blocking work.
-                    </p>
-
-                </div>
-            </div>
-            <div class="column img-row">
-                <div class="sticky">
-                    <img class="portrait" src="img/city/chats-1.png" alt="citymobil">
-                    <img class="portrait" src="img/city/chats-2.png" alt="citymobil">
-                    <img class="portrait" src="img/city/chat-3.png" alt="citymobil">
-                    <img class="portrait" src="img/city/layout-1.gif" alt="citymobil">
-                </div>
-            </div>
-
-        </div>
-
-        <div id="container_out">
-            <div class="column">
-                <div class="sticky">
-                    <p class="gap_1">Results
-                    </p>
-                    <p class="description gap_1">In the end, our workspace was used by approximately 2600 people across
-                        the country and 80 partner companies. The service was sent to many ecosystem companies for
-                        development, resulting in significant cost savings.
-                    </p>
-                    <p class="description gap_1">I will gladly tell you more in person.
-                    </p>
 
 
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div id="container_out">
-            <div class="column">
-                <div class="sticky">
-                    <p class="gap_1">In numbers
-                    </p>
-                    <p class="description gap_1">These numbers may not seem impressive for a mass-market product, but
-                        for our particular company, they represent success. Our service is now being heavily utilized by
-                        all companies within our ecosystem.
-                    </p>
+    </div>
 
 
-
-                </div>
-
-            </div>
-            <div class="column grid">
-                <div class="gridElement">
-                    <div class="stats">
-                        <div class="difference">
-                            <h3 class="">76</h3>
-                            <p class="grey">sec</p>
-                        </div>
-                        <div class="difference">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4444 23.2223H29M29 23.2223V11.6667M29 23.2223L17.4444 11.6667L11.6667 17.4445L3 8.77783"
-                                    stroke="#1BB954" stroke-width="2.67" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <p style="color: #1BB954">284</p>
-                        </div>
-                    </div>
-                    <p class="description grey">Processing time per issue</p>
-                </div>
-
-                <div class="gridElement">
-                    <div class="stats">
-                        <div class="difference">
-                            <h3 class="">60</h3>
-                            <p class="grey">people</p>
-                        </div>
-                        <div class="difference">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.4444 8.77783H29M29 8.77783V20.3334M29 8.77783L17.4444 20.3334L11.6667 14.5556L3 23.2223"
-                                    stroke="#1BB954" stroke-width="2.67" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                            <p style="color: #1BB954">58</p>
-                        </div>
-                    </div>
-                    <p class="description grey">Weekly training speed</p>
-                </div>
-
-                <div class="gridElement">
-                    <div class="stats">
-                        <div class="difference">
-                            <h3 class="">1800</h3>
-                            <p class="grey">hours</p>
-                        </div>
-                        <div class="difference">
-
-                        </div>
-                    </div>
-                    <p class="description grey">Of workflow records</p>
-                </div>
-
-                <div class="gridElement">
-                    <div class="stats">
-                        <div class="difference">
-                            <h3 class="">170</h3>
-                            <p class="grey">interviews</p>
-                        </div>
-                        <div class="difference">
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-
-        <div id="footer">
-            <ul class="menu">
-                <li class="menu_item"><a href="https://www.instagram.com/cheremisin.co.uk/">instagram</a></li>
-                <li class="menu_item"><a href="https://www.facebook.com/ivan.cheremisin.1/">facebook</a></li>
-                <li class="menu_item"><a href="gallery.html">photo</a></li>
-            </ul>
-        </div>
+    <div id="footer">
+        <ul class="menu">
+            <li class="menu_item"><a href="https://www.instagram.com/cheremisin.co.uk/">instagram</a></li>
+            <li class="menu_item"><a href="https://www.facebook.com/ivan.cheremisin.1/">facebook</a></li>
+            <li class="menu_item"><a href="gallery.html">photo</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>
