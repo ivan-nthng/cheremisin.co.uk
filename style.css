@@ -94,6 +94,25 @@ body {
     color: #0c3245;
 }
 
+.buttn-per {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #223852;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2px;
+    outline: none;
+    transition: ease-out 0.2s;
+    border: none;
+}
+
+.buttn-per:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #223852;
+}
+
 
 
 .inverse-bg {
