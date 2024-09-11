@@ -491,6 +491,11 @@ body {
         margin-top: 2vh;
     }
 
+    .graphics {
+        display: flex;
+        align-items: center;
+    }
+
 
 }
 
@@ -564,8 +569,10 @@ a:hover {
 }
 
 .portrait-face {
-    max-height: 80vh;
-    width: 100%;
+    max-width: 80vw;     /* Fit image within the viewport width */
+    max-height: 80vh;    /* Fit image within the viewport height */
+    width: auto;          /* Maintain aspect ratio */
+    height: auto;   
 }
 
 ul {

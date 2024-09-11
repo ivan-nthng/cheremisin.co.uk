@@ -72,3 +72,18 @@ h4 {
     line-height: 1.6;
     font-family: ballinger, sans-serif;
 }
+}
+
+@media (max-width: 1160px) {
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+  }
+
+  @media (max-height: 730px) {
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+  }
