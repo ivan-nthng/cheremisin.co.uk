@@ -3,12 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     width: 100vw;
     height: 100vh;
 }
-
 
 .menu {
     display: flex;
@@ -22,7 +20,6 @@ body {
 }
 
 .img_nda img {
-
     width: 100%;
 }
 
@@ -45,9 +42,6 @@ body {
 .img-row img {
     margin-bottom: 2vh;
 }
-
-
-
 
 .buttn_block {
     display: flex;
@@ -113,8 +107,6 @@ body {
     color: #223852;
 }
 
-
-
 .inverse-bg {
     background-color: #0c3245;
 }
@@ -124,7 +116,6 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     gap: 2vh;
-
 }
 
 .gridElement {
@@ -133,7 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    min-width: 320px ;
+    min-width: 320px;
 }
 
 .stats {
@@ -141,7 +132,6 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     gap: 8px;
-
 }
 
 .difference {
@@ -151,33 +141,24 @@ body {
     gap: 8px;
 }
 
-@media screen and (max-width:1252px) {
+@media screen and (max-width: 1252px) {
+    .grid {
+        padding-top: 52px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2vh;
+    }
 
-.grid {
-    padding-top: 52px;
-    display: grid;
-    grid-template-columns: auto;
-    gap: 2vh;
-
+    .gridElement {
+        background-color: #fbfbfb;
+        padding: 16px 20px;
+        gap: 8px;
+    }
 }
-
-.gridElement {
-    background-color: #fbfbfb;
-    padding: 16px 20px;
-    gap: 8px;
-}
-
-
-}
-
-
 
 /* Mobile */
 
-@media screen and (max-width:800px) {
-
-   
-
+@media screen and (max-width: 800px) {
     .float {
         display: none;
     }
@@ -261,9 +242,6 @@ body {
         margin-top: 1vh;
     }
 
-
-
-
     .structure-face {
         width: 100%;
         height: 100%;
@@ -271,15 +249,12 @@ body {
         overflow-y: scroll;
     }
 
-
-
     #footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 16px 2vh 24px 2vh;
     }
-
 
     #header li,
     #footer li {
@@ -289,16 +264,14 @@ body {
     .contacts-item {
         margin: 1vh 0 0 0;
     }
-
 }
 
-@media(min-width:1070px) {
+@media (min-width: 1070px) {
     .contacts {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-top: auto;
-
     }
 
     .structure-face .container_face-end {
@@ -309,19 +282,10 @@ body {
         margin-bottom: auto;
         scroll-snap-align: start;
     }
-
-
-
-
 }
 
-
-
 /* Desktop */
-@media(min-width:800px) {
-
-
-
+@media (min-width: 800px) {
     #header {
         position: relative;
         display: flex;
@@ -341,11 +305,7 @@ body {
         align-items: center;
         padding: 0 3% 0 3%;
         margin: 0 1.6rem;
-
-
-
     }
-
 
     .structure {
         display: flex;
@@ -363,8 +323,6 @@ body {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
     }
-
-
 
     .structure #container {
         display: grid;
@@ -441,7 +399,6 @@ body {
         margin: 0 6vh 6vh 6vh;
     }
 
-
     .header {
         display: flex;
         justify-content: space-between;
@@ -482,7 +439,6 @@ body {
         margin: 2vh 4vh 0 0;
     }
 
-
     .cv-unit {
         width: 100%;
         display: flex;
@@ -495,16 +451,9 @@ body {
         display: flex;
         align-items: center;
     }
-
-
 }
 
-
-
-
 /* ____ Links ___________ */
-
-
 
 a {
     /* position: relative; */
@@ -516,10 +465,6 @@ a:hover {
     color: #9e6dec;
     transition: 0.2s;
 }
-
-
-
-
 
 .links {
     margin: 16px 0 16px 0;
@@ -569,10 +514,10 @@ a:hover {
 }
 
 .portrait-face {
-    max-width: 80vw;     /* Fit image within the viewport width */
-    max-height: 80vh;    /* Fit image within the viewport height */
-    width: auto;          /* Maintain aspect ratio */
-    height: auto;   
+    max-width: 80vw; /* Fit image within the viewport width */
+    max-height: vh; /* Fit image within the viewport height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto;
 }
 
 ul {
@@ -584,8 +529,6 @@ ul {
     color: hsl(0, 0%, 44%);
 }
 
-
-
 li {
     margin-bottom: 0.5rem;
 }
@@ -594,8 +537,6 @@ li {
     margin-top: 2vh;
     margin-bottom: 4vh;
 }
-
-
 
 .menu li {
     margin: 0 24px 0 0;
@@ -629,11 +570,10 @@ a svg {
 
 .hidden {
     opacity: 0;
-  
+
     transition: all 1s;
-  }
-  
-  .show {
+}
+
+.show {
     opacity: 1;
-  
-  }
+}
