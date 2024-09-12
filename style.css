@@ -28,7 +28,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #3d3d3d;
+    background-color: #061130;
     color: #fff;
     padding: 8px 16px 8px 16px;
     border-radius: 2px;
@@ -54,17 +54,17 @@ body {
     font-size: 1.3rem;
     padding: 0.6rem 0.8rem;
     background-color: #fff;
-    color: #3d3d3d;
+    color: #061130;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 2px;
     outline: none;
     transition: ease-out 0.2s;
-    border: 2px solid #3d3d3d;
+    border: 2px solid #061130;
 }
 
 .buttn:hover {
-    background-color: #3d3d3d;
+    background-color: #061130;
     cursor: pointer;
     color: #fff;
 }
@@ -457,12 +457,12 @@ body {
 
 a {
     /* position: relative; */
-    color: #3d3d3d;
+    color: #061130;
     text-decoration: none;
 }
 
 a:hover {
-    color: #9e6dec;
+    color: #4160b8;
     transition: 0.2s;
 }
 
