@@ -515,7 +515,7 @@ a:hover {
 
 .portrait-face {
     max-width: 80vw; /* Fit image within the viewport width */
-    max-height: vh; /* Fit image within the viewport height */
+    max-height: 80vh; /* Fit image within the viewport height */
     width: auto; /* Maintain aspect ratio */
     height: auto;
 }
