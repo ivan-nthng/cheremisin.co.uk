@@ -12,7 +12,6 @@ h4 {
     font-style: normal;
     margin: 0;
     color: #3d3d3d;
-
 }
 
 .inverse {
@@ -66,24 +65,24 @@ h4 {
     line-height: max(1.2, min(4vw, 32px));
 }
 
-@media(max-width:800px) {
-.mobile-p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: ballinger, sans-serif;
-}
+@media (max-width: 800px) {
+    .mobile-p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        font-family: ballinger, sans-serif;
+    }
 }
 
 @media (max-width: 1160px) {
-    p {
+    .p-main {
         font-size: 1.2rem;
         line-height: 1.5;
     }
-  }
+}
 
-  @media (max-height: 730px) {
+@media (max-height: 730px) {
     p {
         font-size: 1.2rem;
         line-height: 1.5;
     }
-  }
+}
