@@ -10,7 +10,7 @@ body {
 
 .menu {
     display: flex;
-    padding: 0%;
+    padding: 0;
     list-style: none;
     margin: 0;
 }
@@ -180,15 +180,11 @@ body {
     }
 
     #header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 2vh 8px 2vh;
+        margin: 12px 2vh 8px 2vh;
         position: sticky;
         top: 0;
         background-color: #fff;
-        width: 100%;
+        z-index: 13;
     }
 
     .column-face {
@@ -287,10 +283,6 @@ body {
 /* Desktop */
 @media (min-width: 800px) {
     #header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 0 3% 0 3%;
         position: sticky;
         top: 0;
@@ -397,13 +389,6 @@ body {
         scroll-snap-align: start;
 
         margin: 0 6vh 6vh 6vh;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 32px 0 32px;
     }
 
     .footer {
