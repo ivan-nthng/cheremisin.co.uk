@@ -147,6 +147,9 @@ sup {
 
 img {
     border-style: none;
+    -webkit-user-drag: none;  /* Disable dragging */
+    user-select: none;  /* Disable selection */
+    pointer-events: none;  /* Disable all mouse interactions */
 }
 
 /* Forms
