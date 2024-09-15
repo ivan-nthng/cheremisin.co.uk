@@ -4,12 +4,14 @@ html {
 }
 
 body {
-    width: 100vmax;
-    height: 100vmax;
+    width: 100vw;
+    height: 100vh;
 }
 
 .menu {
     display: flex;
+    flex-direction: row;
+    gap: 2vw;
     padding: 0%;
     list-style: none;
     margin: 0;
@@ -180,16 +182,18 @@ body {
     }
 
     #header {
-        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px 2vh 8px 2vh;
+        margin: 12px 2vh 8px 2vh;
         position: sticky;
         top: 0;
         background-color: #fff;
-        width: 100%;
     }
+
+    /* #header .menu {
+        width: 100%;
+    } */
 
     .column-face {
         margin: 2vh 3vh;
@@ -291,12 +295,13 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 3% 0 3%;
         position: sticky;
         top: 0;
         background-color: #fff;
         z-index: 50;
-        margin: 0 1.6rem;
+
+        margin: 0 3% 0 3%;
+        max-width: 1920px;
     }
 
     #footer {
@@ -311,7 +316,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        grid-template-rows: 52px 1fr 52px;
+        grid-template-rows: 52px 1fr;
         max-width: 1920px;
         margin: 0 auto;
         min-height: 100vh;
@@ -399,13 +404,6 @@ body {
         margin: 0 6vh 6vh 6vh;
     }
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 32px 0 32px;
-    }
-
     .footer {
         display: flex;
         justify-content: space-between;
@@ -417,8 +415,8 @@ body {
         padding: 16px 16px 16px 32px;
     }
 
-    .menu li {
-        margin: 0 0 0 24px;
+    #header .menu {
+        margin: 0 0 0 1.6rem;
     }
 
     .sticky {
@@ -529,6 +527,10 @@ ul {
     color: hsl(0, 0%, 44%);
 }
 
+#header ul {
+    margin-left: 0;
+}
+
 li {
     margin-bottom: 0.5rem;
 }
@@ -536,10 +538,6 @@ li {
 .s {
     margin-top: 2vh;
     margin-bottom: 4vh;
-}
-
-.menu li {
-    margin: 0 24px 0 0;
 }
 
 a svg {
