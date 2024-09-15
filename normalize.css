@@ -147,6 +147,9 @@ sup {
 
 img {
     border-style: none;
+    -webkit-user-drag: none; /* Disable dragging */
+    user-select: none; /* Disable selection */
+    pointer-events: none; /* Disable all mouse interactions */
 }
 
 /* Forms
@@ -193,13 +196,6 @@ select {
 /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-    -webkit-appearance: button;
-}
 
 /**
    * Remove the inner border and padding in Firefox.
@@ -290,7 +286,6 @@ textarea {
    */
 
 [type='search'] {
-    -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
 }
 
